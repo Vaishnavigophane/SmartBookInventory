@@ -1,0 +1,145 @@
+.reports-page {
+  animation: fadeIn 0.3s ease;
+}
+
+.report-filters {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.filter-select {
+  min-width: 200px;
+}
+
+.report-container {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+}
+
+.report-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.report-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.report-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.report-content {
+  overflow-x: auto;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-table th,
+.report-table td {
+  padding: 0.875rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.report-table th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  white-space: nowrap;
+}
+
+.report-table td {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+}
+
+.report-table tbody tr:hover {
+  background: var(--bg-secondary);
+}
+
+.low-stock-row {
+  background: var(--warning-light) !important;
+}
+
+.low-stock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  background: var(--warning-light);
+  color: var(--warning-color);
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.good-stock-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  background: var(--success-light);
+  color: var(--success-color);
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+.shortage-value {
+  font-weight: 600;
+  color: var(--danger-color);
+}
+
+.report-loading,
+.report-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 1rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .report-filters {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+}

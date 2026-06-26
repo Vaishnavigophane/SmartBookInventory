@@ -1,0 +1,83 @@
+.stats-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  transition: var(--transition);
+}
+
+.stats-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.stats-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius);
+  font-size: 1.5rem;
+}
+
+.stats-card-primary .stats-icon {
+  background: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.stats-card-success .stats-icon {
+  background: var(--success-light);
+  color: var(--success-color);
+}
+
+.stats-card-warning .stats-icon {
+  background: var(--warning-light);
+  color: var(--warning-color);
+}
+
+.stats-card-danger .stats-icon {
+  background: var(--danger-light);
+  color: var(--danger-color);
+}
+
+.stats-card-info .stats-icon {
+  background: var(--info-light);
+  color: var(--info-color);
+}
+
+.stats-content {
+  flex: 1;
+}
+
+.stats-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.stats-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.stats-trend {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.stats-trend.up {
+  color: var(--success-color);
+}
+
+.stats-trend.down {
+  color: var(--danger-color);
+}
